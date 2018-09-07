@@ -1,2 +1,3 @@
 baseurl: /RESTful-table
-exclude: ['README.md']
+exclude: ['README.md', '.gitignore']
+permalink: pretty
