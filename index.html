@@ -1,0 +1,186 @@
+---
+layout: default
+title: RESTful Routes - Home
+---
+
+<header>
+  <h1>RESTful Routes</h1>
+  <p>A table of all 7 RESTful routes</p>
+  <p>RESTful Routes (Representational State Transfer): A pattern of routes to follow for c.r.u.d. apps.</p>
+</header>
+<main>
+  <div class="table--1">
+    <table>
+      <thead>
+        <tr class="gray">
+          <th>Name</th>
+          <th>Path</th>
+          <th>HTTP Verb</th>
+          <th>Purpose</th>
+          <th>Mongoose Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gray">
+          <td>Index</td>
+          <td>/cats</td>
+          <td>GET</td>
+          <td>List all cats</td>
+          <td>Cat.find()</td>
+        </tr>
+        <tr class="green">
+          <td>New</td>
+          <td>/cats/new</td>
+          <td>GET</td>
+          <td>Show new cat form</td>
+          <td>N/A</td>
+        </tr>
+        <tr class="green">
+          <td>Create</td>
+          <td>/cats</td>
+          <td>POST</td>
+          <td>Create a new cat, then redirect somewhere</td>
+          <td>Cat.create()</td>
+        </tr>
+        <tr class="blue">
+          <td>Show</td>
+          <td>/cats/:id</td>
+          <td>GET</td>
+          <td>Show info about one specific cat</td>
+          <td>Cat.findById()</td>
+        </tr>
+        <tr class="yellow">
+          <td>Edit</td>
+          <td>/cats/:id/edit</td>
+          <td>GET</td>
+          <td>Show edit form for one cat</td>
+          <td>Cat.findById()</td>
+        </tr>
+        <tr class="yellow">
+          <td>Update</td>
+          <td>/cats/:id</td>
+          <td>PUT</td>
+          <td>Update a specific cat, then redirect somewhere</td>
+          <td>Cat.findByIdAndUpdate()</td>
+        </tr>
+        <tr class="red">
+          <td>Delete</td>
+          <td>/cats/:id</td>
+          <td>DELETE</td>
+          <td>Delete a specific cat, then redirect somewhere</td>
+          <td>Cat.findByIdAndRemove()</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table--2">
+    <table>
+      <thead>
+        <tr class="gray">
+          <th>Name</th>
+          <th>Path</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gray">
+          <td>Index</td>
+          <td>/cats</td>
+        </tr>
+        <tr class="green">
+          <td>New</td>
+          <td>/cats/new</td>
+        </tr>
+        <tr class="green">
+          <td>Create</td>
+          <td>/cats</td>
+        </tr>
+        <tr class="blue">
+          <td>Show</td>
+          <td>/cats/:id</td>
+        </tr>
+        <tr class="yellow">
+          <td>Edit</td>
+          <td>/cats/:id/edit</td>
+        </tr>
+        <tr class="yellow">
+          <td>Update</td>
+          <td>/cats/:id</td>
+        </tr>
+        <tr class="red">
+          <td>Delete</td>
+          <td>/cats/:id</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr class="gray">
+          <th>HTTP Verb</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gray">
+          <td>GET</td>
+          <td>List all cats</td>
+        </tr>
+        <tr class="green">
+          <td>GET</td>
+          <td>Show new cat form</td>
+        </tr>
+        <tr class="green">
+          <td>POST</td>
+          <td>Create a new cat, then redirect somewhere</td>
+        </tr>
+        <tr class="blue">
+          <td>GET</td>
+          <td>Show info about one specific cat</td>
+        </tr>
+        <tr class="yellow">
+          <td>GET</td>
+          <td>Show edit form for one cat</td>
+        </tr>
+        <tr class="yellow">
+          <td>PUT</td>
+          <td>Update a specific cat, then redirect somewhere</td>
+        </tr>
+        <tr class="red">
+          <td>DELETE</td>
+          <td>Delete a specific cat, then redirect somewhere</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr class="gray">
+          <th>Mongoose Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gray">
+          <td>Cat.find()</td>
+        </tr>
+        <tr class="green">
+          <td>N/A</td>
+        </tr>
+        <tr class="green">
+          <td>Cat.create()</td>
+        </tr>
+        <tr class="blue">
+          <td>Cat.findById()</td>
+        </tr>
+        <tr class="yellow">
+          <td>Cat.findById()</td>
+        </tr>
+        <tr class="yellow">
+          <td>Cat.findByIdAndUpdate()</td>
+        </tr>
+        <tr class="red">
+          <td>Cat.findByIdAndRemove()</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
